@@ -44,7 +44,7 @@
                             <p class="me-2 mb-2"><span class="text-danger">*</span> Please click Update now button, may its need sometime</p>
                             <div class="mt-3">
                                 <div class="single-section">
-                                    <h4 class="section-title mb-2">Please enter your Item purchase code and customer email</h4>
+                                    <h4 class="section-title mb-2">Credintial</h4>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
