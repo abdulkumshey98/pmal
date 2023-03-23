@@ -9985,3 +9985,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .stu-consult-tbl tbody tr td:nth-child(1) .course-item.wishlist-item {
     width: 350px !important;
 }
+
+
+.sidebar__brand img {
+    width: 50px;
+}
+
+
+.sign-up-top-logo {
+    width: 80px !important;
+}
