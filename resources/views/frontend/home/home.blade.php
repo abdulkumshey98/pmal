@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+{{-- @extends('frontend.layouts.app')
 
 @section('content')
     <!-- Header Start -->
@@ -692,4 +692,4 @@
         const zai_player = new Plyr('#player');
     </script>
     <!-- Video Player js -->
-@endpush
+@endpush --}}
