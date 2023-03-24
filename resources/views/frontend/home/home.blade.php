@@ -1,8 +1,10 @@
 @extends('frontend.layouts.app')
 
 @section('content')
+
+    <div class="header-grid"></div>
     <!-- Header Start -->
-    <header class="hero-area gradient-bg position-relative">
+    {{-- <header class="hero-area gradient-bg position-relative">
         <div class="section-overlay">
             <div class="container">
                 <div class="row">
@@ -42,11 +44,11 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> --}}
     <!-- Header End -->
 
     <!-- Special Feature Area Start -->
-    <section class="special-feature-area p-0 {{ @$home->special_feature_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="special-feature-area p-0 {{ @$home->special_feature_area == 1 ? '' : 'd-none' }}">
         <div class="container">
             <div class="row">
                 <!-- Single Feature Item start-->
@@ -91,12 +93,12 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Special Feature Area End -->
 
     @if(!get_option('private_mode') || !auth()->guest())
     <!-- Board Selection of Courses Area Start -->
-    <section class="courses-area section-t-space section-b-85-space {{ @$home->courses_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="courses-area section-t-space section-b-85-space {{ @$home->courses_area == 1 ? '' : 'd-none' }}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -149,11 +151,11 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
     <!-- Board Selection of Courses Area End -->
     @if(count($bundles) > 0)
     <!-- Latest Courses bundles Area Start -->
-    <section class="courses-area courses-bundels-area section-t-space section-b-85-space bg-page {{ @$home->bundle_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="courses-area courses-bundels-area section-t-space section-b-85-space bg-page {{ @$home->bundle_area == 1 ? '' : 'd-none' }}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -226,13 +228,13 @@
                     </div>
                 </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Latest Courses bundles Area End -->
     @endif
     @endif
 
     <!-- Our Top Categories Area Start -->
-    <section class="top-categories-area gradient-bg p-0 {{ @$home->top_category_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="top-categories-area gradient-bg p-0 {{ @$home->top_category_area == 1 ? '' : 'd-none' }}">
         <div class="section-overlay section-t-space section-b-space">
             <div class="container">
                 <div class="row">
@@ -273,13 +275,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Our Top Categories Area End -->
 
     @if(!get_option('private_mode') || !auth()->guest())
     @if(count($consultationInstructors) > 0)
     <!-- One to One Consultation Area Start -->
-    <section class="courses-area courses-bundels-area one-to-one-consultation-area section-t-space section-b-85-space bg-page {{ @$home->consultation_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="courses-area courses-bundels-area one-to-one-consultation-area section-t-space section-b-85-space bg-page {{ @$home->consultation_area == 1 ? '' : 'd-none' }}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -319,7 +321,7 @@
             <!-- One to one consultation Slider end -->
 
         </div>
-    </section>
+    </section> --}}
     <!-- One to One Consultation Area End -->
     @endif
     @endif
@@ -331,7 +333,7 @@
     <!-- Subscription End -->
 
     <!-- Our Top Instructor Area Start -->
-    <section class="top-instructor-area section-t-space bg-white {{ @$home->instructor_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="top-instructor-area section-t-space bg-white {{ @$home->instructor_area == 1 ? '' : 'd-none' }}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -358,12 +360,12 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Our Top Instructor Area End -->
 
 
     <!-- Video Area Start -->
-    <section class="video-area {{ @$home->video_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="video-area {{ @$home->video_area == 1 ? '' : 'd-none' }}">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-7 col-xl-8">
@@ -395,7 +397,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Video Area End -->
 
     <!-- Saas Plan Start -->
@@ -405,7 +407,7 @@
     <!-- Saas Plan End -->
 
     <!-- Customers Says/ testimonial Area Start -->
-    <section class="customers-says-area gradient-bg p-0 {{ @$home->customer_says_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="customers-says-area gradient-bg p-0 {{ @$home->customer_says_area == 1 ? '' : 'd-none' }}">
         <div class="section-overlay section-t-space section-b-space">
             <div class="container">
                 <div class="row">
@@ -487,11 +489,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Customers Says/ testimonial Area End -->
 
     <!-- Achievement Area Start -->
-    <section class="achievement-area {{ @$home->achievement_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="achievement-area {{ @$home->achievement_area == 1 ? '' : 'd-none' }}">
         <div class="container">
             <div class="row achievement-content-area">
                 <!-- Achievement Item start-->
@@ -551,11 +553,11 @@
                 <!-- Achievement Item End-->
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Achievement Area End -->
 
     <!-- FAQ Area Start -->
-    <section class="faq-area home-page-faq-area section-t-space {{ @$home->faq_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="faq-area home-page-faq-area section-t-space {{ @$home->faq_area == 1 ? '' : 'd-none' }}">
         <div class="container">
 
             <!-- FAQ Shape Image Start-->
@@ -603,11 +605,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- FAQ Area End -->
 
     <!-- Course Instructor and Support Area Start -->
-    <section class="course-instructor-support-area bg-light section-t-space {{ @$home->instructor_support_area == 1 ? '' : 'd-none' }}">
+    {{-- <section class="course-instructor-support-area bg-light section-t-space {{ @$home->instructor_support_area == 1 ? '' : 'd-none' }}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -646,7 +648,7 @@
             </div>
             <!-- Client Logo Area end-->
         </div>
-    </section>
+    </section> --}}
     <!-- Course Instructor and Support Area End -->
 
     @include('frontend.home.partial.consultation-booking-schedule-modal')

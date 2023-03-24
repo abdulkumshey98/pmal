@@ -1,6 +1,6 @@
 <footer class="footer-area footer-gradient-bg position-relative">
     <div class="section-overlay">
-        
+
         <div class="container">
             <!-- footer-widget-area -->
             <div class="row footer-top-part section-p-t-b-90">
@@ -86,7 +86,7 @@
             <div class="row copyright-wrapper">
                 <div class="col-12 col-md-12 col-lg-4">
                     <div class="footer-payment">
-                        <img src="{{ asset(get_option('app_footer_payment_image') ?? 'frontend/assets/img/payment-cards.png') }}" alt="payments">
+                        <img src="{{ asset(get_option('app_footer_payment_image') ?? 'frontend/assets/img/payment-cards.png') }}" style="width: 50px;" alt="payments">
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
@@ -98,7 +98,7 @@
                     <div class="footer-bottom-nav">
                         <ul class="d-flex justify-content-end">
                             <li><a href="{{ route('allInstructor') }}">{{__('Instructor')}}</a></li>
-                            <li><a href="{{ route('student.become-an-instructor') }}">{{__('Become Instructor')}}</a></li>
+                            {{-- <li><a href="{{ route('student.become-an-instructor') }}">{{__('Become Instructor')}}</a></li> --}}
                             <li><a href="{{ route('verify_certificate') }}">{{__('Verify Certificate')}}</a></li>
                         </ul>
                     </div>

@@ -28,7 +28,7 @@
                                     <a href="{{ route('category-courses', $category->slug) }}"
                                         class="dropdown-item @if(count($category->subcategories) > 0) dropdown-toggle @endif">{{
                                         $category->name }}</a>
-                                    @if(count($category->subcategories) > 0)
+                                    {{-- @if(count($category->subcategories) > 0)
                                     <ul class="submenu dropdown-menu">
                                         @foreach($category->subcategories as $subcategory)
                                         <li><a class="dropdown-item"
@@ -36,12 +36,10 @@
                                                 $subcategory->name }}</a></li>
                                         @endforeach
                                     </ul>
-                                    @endif
+                                    @endif --}}
                                 </li>
                                 @endforeach
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
+
                                 <li><a href="{{ route('courses') }}">{{ __('All Courses') }}</a></li>
                             </ul>
                         </li>
