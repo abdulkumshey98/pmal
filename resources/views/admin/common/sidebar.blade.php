@@ -8,7 +8,7 @@
     <div class="sidebar__brand">
         <a href="{{ route('admin.dashboard') }}">
             @if(get_option('app_logo') != '')
-                <img src="{{getImageFile(get_option('app_logo'))}}" alt="">
+                <img src="{{getImageFile(get_option('app_logo'))}}" style="width: 50px;" alt="">
             @else
                 <img src="" alt="">
             @endif

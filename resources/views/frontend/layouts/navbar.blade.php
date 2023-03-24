@@ -1,4 +1,4 @@
-@php 
+@php
     $authUser = @auth()->user();
 @endphp
 
@@ -47,7 +47,7 @@
                         </li>
                     </ul>
 
-                    <form action="#">
+                    {{-- <form action="#">
                         <div class="input-group">
                             <button class="input-group-text pe-0" id="basic-addon1"><img
                                     src="{{ asset('frontend/assets/img/icons-svg/search.svg') }}" alt="Search"></button>
@@ -63,11 +63,11 @@
                             </ul>
                         </div>
                         <!-- Search Bar Suggestion Box End -->
-                    </form>
+                    </form> --}}
                 </div>
                 <div class="header-nav-right-side d-flex">
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown"
                                 data-bs-toggle="dropdown">{{__('Pages')}}</a>
                             <ul class="dropdown-menu {{$selectedLanguage->rtl == 1 ? 'dropdown-menu-end' : ''}}">
@@ -81,21 +81,21 @@
                                         __($dynamicMenu->name) }}</a></li>
                                 @endforeach
                             </ul>
-                        </li>
+                        </li> --}}
                         @if(@$authUser->role == USER_ROLE_INSTRUCTOR || @$authUser->role == USER_ROLE_STUDENT || @$authUser->role == USER_ROLE_ORGANIZATION)
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="{{ route('forum.index') }}">{{__('Forum')}}</a>
-                        </li>
+                        </li> --}}
                         @if(@$authUser->role == USER_ROLE_STUDENT )
                         @if(@$authUser->instructor || @$authUser->organization)
                         <li class="nav-item">
                             <span class="nav-link">{{__('Request Pending')}}</span>
                         </li>
                         @else
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="{{route('student.become-an-instructor')}}">{{__('Become an
                                 Instructor')}}</a>
-                        </li>
+                        </li> --}}
                         @endif
                         @elseif(@$authUser->role == USER_ROLE_INSTRUCTOR || @$authUser->role == USER_ROLE_ORGANIZATION)
                         <!-- Status 1 = Approved,  Status 2 = Blocked,  Status 0 = Pending -->
@@ -364,7 +364,7 @@
                                             {{ __('Device Control') }}</a>
                                     </li>
                                     @endif
-                                    
+
                                     @if(Auth::user()->is_affiliator == AFFILIATOR || (Auth::user()->role == USER_ROLE_INSTRUCTOR &&
                                     @$authUser->instructor->status == STATUS_APPROVED) || (Auth::user()->role == USER_ROLE_ORGANIZATION &&
                                     @$authUser->organization->status == STATUS_APPROVED))

@@ -9988,10 +9988,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 .sidebar__brand img {
-    width: 50px;
+    width: 50px !important;
 }
 
 
-.sign-up-top-logo {
+.sign-up-top-logo img {
     width: 80px !important;
 }
