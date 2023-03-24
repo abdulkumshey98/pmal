@@ -25,7 +25,7 @@
                             <ul class="dropdown-menu {{$selectedLanguage->rtl == 1 ? 'dropdown-menu-end' : ''}}">
                                 @foreach($categories as $category)
                                 <li>
-                                    <a href="{{ route('category-courses', $category->slug) }}"
+                                    <a href="course-details/Project-Development"
                                         class="dropdown-item @if(count($category->subcategories) > 0) dropdown-toggle @endif">{{
                                         $category->name }}</a>
                                     {{-- @if(count($category->subcategories) > 0)
@@ -40,7 +40,7 @@
                                 </li>
                                 @endforeach
 
-                                <li><a href="{{ route('courses') }}">{{ __('All Courses') }}</a></li>
+                                {{-- <li><a href="{{ route('courses') }}">{{ __('All Courses') }}</a></li> --}}
                             </ul>
                         </li>
                     </ul>
