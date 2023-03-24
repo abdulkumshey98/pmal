@@ -86,9 +86,9 @@
                         </li> --}}
                         @if(@$authUser->role == USER_ROLE_STUDENT )
                         @if(@$authUser->instructor || @$authUser->organization)
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <span class="nav-link">{{__('Request Pending')}}</span>
-                        </li>
+                        </li> --}}
                         @else
                         {{-- <li class="nav-item">
                             <a class="nav-link" href="{{route('student.become-an-instructor')}}">{{__('Become an
@@ -132,12 +132,12 @@
                         @endif
                         @endif
                         @else
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="{{ route('forum.index') }}">{{__('Forum')}}</a>
-                        </li>
-                        <li class="nav-item">
+                        </li> --}}
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="{{ route('blogs') }}">{{__('Blog')}}</a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="{{ route('contact') }}">{{__('Contact')}}</a>
                         </li>

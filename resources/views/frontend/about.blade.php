@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+{{-- @extends('frontend.layouts.app')
 
 @section('content')
 <!-- Page Header Start -->
@@ -230,4 +230,4 @@
         });
     </script>
     <!-- Shuffle js filter and masonry Start -->
-@endpush
+@endpush --}}
