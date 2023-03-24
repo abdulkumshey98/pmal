@@ -2,7 +2,11 @@
 
 @section('content')
 
-    <div class="header-grid"></div>
+ <header class="hero-area gradient-bg position-relative">
+    <img src="" alt="">
+ </header>
+
+
     <!-- Header Start -->
     {{-- <header class="hero-area gradient-bg position-relative">
         <div class="section-overlay">

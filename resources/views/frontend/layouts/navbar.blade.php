@@ -4,7 +4,7 @@
 
 <section class="menu-section-area @auth isLoginMenu @endauth">
     <!-- Navigation -->
-    <nav class="navbar sticky-header navbar-expand-lg" id="mainNav">
+    <nav class="navbar  navbar-expand-lg"  id="mainNav">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ getImageFile(get_option('app_logo')) }}"
                     alt="Logo"></a>
